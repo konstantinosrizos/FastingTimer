@@ -12,6 +12,7 @@
 		5215C64D28BA65F100BE1141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5215C64C28BA65F100BE1141 /* Assets.xcassets */; };
 		5215C65028BA65F100BE1141 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5215C64F28BA65F100BE1141 /* Preview Assets.xcassets */; };
 		5215C65728BA6A1300BE1141 /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215C65628BA6A1300BE1141 /* ProgressRingView.swift */; };
+		5215C65928BA73D500BE1141 /* FastingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215C65828BA73D500BE1141 /* FastingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		5215C64C28BA65F100BE1141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5215C64F28BA65F100BE1141 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5215C65628BA6A1300BE1141 /* ProgressRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRingView.swift; sourceTree = "<group>"; };
+		5215C65828BA73D500BE1141 /* FastingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +57,10 @@
 			children = (
 				5215C64828BA65EF00BE1141 /* FastingTimerApp.swift */,
 				5215C64A28BA65EF00BE1141 /* ContentView.swift */,
+				5215C65628BA6A1300BE1141 /* ProgressRingView.swift */,
+				5215C65828BA73D500BE1141 /* FastingManager.swift */,
 				5215C64C28BA65F100BE1141 /* Assets.xcassets */,
 				5215C64E28BA65F100BE1141 /* Preview Content */,
-				5215C65628BA6A1300BE1141 /* ProgressRingView.swift */,
 			);
 			path = FastingTimer;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				5215C64B28BA65EF00BE1141 /* ContentView.swift in Sources */,
 				5215C64928BA65EF00BE1141 /* FastingTimerApp.swift in Sources */,
+				5215C65928BA73D500BE1141 /* FastingManager.swift in Sources */,
 				5215C65728BA6A1300BE1141 /* ProgressRingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
