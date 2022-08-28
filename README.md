@@ -13,12 +13,16 @@
   <tr>
     <td>Main View</td>
 	<td>Fasting View</td>
-	<td>Feeding View</td>
-	<td>Exceeds Current State View</td>
   </tr>
   <tr>
     <td><img src="Assets/MainScreen.png" width=270 height=480></td>
 	<td><img src="Assets/FastingState.png" width=270 height=480></td>
+  </tr>
+    <tr>
+	<td>Feeding View</td>
+	<td>Exceeds Current State View</td>
+  </tr>
+    <tr>
 	<td><img src="Assets/FeedingState.png" width=270 height=480></td>
     <td><img src="Assets/ExceedsTheCurrentState.png" width=270 height=480></td>
   </tr>
