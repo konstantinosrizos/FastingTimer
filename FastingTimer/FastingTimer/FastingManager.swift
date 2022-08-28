@@ -76,10 +76,10 @@ class FastingManager: ObservableObject {
 		elapsedTime = 0.0
 	}
 	
-	func toggleFastingPlan() {
-		if fastingPlan == .begginer {
+	func toggleFastingPlan(fastingPlanSelected: FastingPlan) {
+		if fastingPlanSelected == .begginer {
 			fastingPlan = .begginer
-		} else if fastingPlan == .intermediate {
+		} else if fastingPlanSelected == .intermediate {
 			fastingPlan = .intermediate
 		} else {
 			fastingPlan = .advanced

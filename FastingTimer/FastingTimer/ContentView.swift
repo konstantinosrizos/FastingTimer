@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
 	@StateObject var fastingManager = FastingManager()
+	@State private var fastingPlanSelection = FastingPlan.intermediate
+	@State var fastingPlanArray: [FastingPlan] = [.begginer, .intermediate, .advanced]
 	
 	var title: String {
 		switch fastingManager.fastingState {
@@ -40,22 +42,20 @@ struct ContentView: View {
 					.foregroundColor(Color(#colorLiteral(red: 0.2616114616, green: 0.3207069039, blue: 1, alpha: 1)))
 				
 				// MARK: Fasting Plan
-				Button {
-					fastingManager.toggleFastingPlan()
-				} label: {
-					Text(fastingManager.fastingPlan.rawValue)
-						.font(.title3)
-						.fontWeight(.semibold)
-						.padding(.horizontal, 24)
-						.padding(.vertical, 8)
-						.background(.thinMaterial)
-						.cornerRadius(20)
+				Picker("Select Plan", selection: $fastingPlanSelection) {
+					ForEach(fastingPlanArray, id: \.self) {
+						Text($0.rawValue)
+					}
+				}
+				.pickerStyle(.segmented)
+				.onChange(of: fastingPlanSelection) { value in
+					fastingManager.toggleFastingPlan(fastingPlanSelected: value)
 				}
 				
 				Spacer()
 			}
 			.padding()
-				
+							
 			VStack(spacing: 40) {
 				// MARK: Progress Ring
 				ProgressRingView()
@@ -102,6 +102,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+		ContentView()
     }
 }
